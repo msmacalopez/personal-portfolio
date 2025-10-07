@@ -2,10 +2,14 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="section hero">
+    <div id="hero" className="section hero">
       <div className="hero-bg"></div>
       <div className="hero-content">
-        <h1>I Code...</h1>
+        <h3 className="h3-hero">I Code...</h3>
+        <h1 className="h1-hero">Macarena Lopez</h1>
+        <h2 className="h2-hero">
+          Junior Front-end Developer | Aspiring FullStack
+        </h2>
       </div>
     </div>
   );

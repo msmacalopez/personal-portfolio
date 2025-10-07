@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function Skills() {
-  return <div className="section skills">Skills</div>;
+  return (
+    <div id="skills" className="section skills">
+      Skills
+    </div>
+  );
 }

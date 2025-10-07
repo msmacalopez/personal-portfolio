@@ -3,16 +3,24 @@ import icon from "../assets/icon2.png";
 
 export default function NavBar() {
   return (
-    <div className="navbar">
+    <div id="navbar" className="navbar">
       <div>
         <img className="icon_img" src={icon} alt="icon" />
         <h1>MacArEna lOpEz</h1>
       </div>
       <ul>
-        <li>Hero</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li>
+          <a href="#hero">Hero</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </div>
   );
