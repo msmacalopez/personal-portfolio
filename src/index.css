@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   font-size: 1.3rem;
+  font-family: "Courier New", Courier, monospace;
 }
 html {
   scroll-behavior: smooth;
@@ -14,17 +15,19 @@ a {
 .wrapper {
   /* width: 90%;
   margin: auto; */
-  min-height: 120vh;
+  min-height: 100vh;
   /* background: grey; */
 }
 .section {
-  height: 120vh;
+  height: 100vh;
   border: solid black;
   scroll-margin-top: 80px;
 }
+
+/* NavBar Section */
 .navbar {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
 
   padding: 0.5rem 5rem;
@@ -52,6 +55,7 @@ a {
 }
 .navbar > div > h1 {
   text-wrap: nowrap;
+  font-size: 2rem;
 }
 .navbar > ul {
   list-style: none;
@@ -60,7 +64,7 @@ a {
   align-items: center;
   gap: 30px;
 }
-/* Hero  */
+/* Hero Section */
 .hero {
   position: relative;
   /* height: 100vh; */
@@ -76,7 +80,7 @@ a {
 }
 
 .hero-content {
-  margin-top: 10vh;
+  margin-top: 25vh;
   padding: 10px 15%;
 
   position: relative;
@@ -92,4 +96,10 @@ a {
 .h2-hero {
   font-size: 2rem;
   text-align: end;
+}
+i {
+  font-size: 5rem;
+}
+.logo {
+  width: 150px;
 }

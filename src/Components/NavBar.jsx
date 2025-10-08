@@ -10,7 +10,7 @@ export default function NavBar() {
       </div>
       <ul>
         <li>
-          <a href="#hero">Hero</a>
+          <a href="#hero">Home</a>
         </li>
         <li>
           <a href="#skills">Skills</a>
