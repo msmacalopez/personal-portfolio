@@ -3,6 +3,8 @@
   margin: 0;
   font-size: 1.3rem;
   font-family: "Courier New", Courier, monospace;
+  --background-black: rgba(0, 0, 0, 0.863);
+  --blue-card: rgb(66, 112, 182);
 }
 html {
   scroll-behavior: smooth;
@@ -102,4 +104,50 @@ i {
 }
 .logo {
   width: 150px;
+}
+/* Contact  Section */
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./assets/background-contact.jpg) no-repeat center/cover;
+}
+.card-container {
+  perspective: 1000px;
+  width: 500px;
+  height: 250px;
+
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.616);
+}
+.card-contact {
+  width: 100%;
+  height: 100%;
+  /* padding: 2rem; */
+
+  position: relative;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+}
+.card-container:hover .card-contact {
+  transform: rotateY(180deg);
+}
+.card-front,
+.card-back {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  overflow: hidden;
+  border-radius: 20px;
+
+  backdrop-filter: blur(20px);
+}
+.card-back {
+  transform: rotateY(180deg);
+  /* background: radial-gradient(rgb(201, 201, 85), var(--blue-card)); */
+}
+.card-front {
+  /* background: radial-gradient(rgb(201, 201, 85), var(--blue-card)); */
 }
