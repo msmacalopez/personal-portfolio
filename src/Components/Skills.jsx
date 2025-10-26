@@ -1,7 +1,7 @@
 import React from "react";
-import mongodb from "../assets/mongodb_logo.png";
-import nextjs from "../assets/nextjs_logo.png";
-import nodejs from "../assets/nodejs_logo.png";
+import mongodb from "../assets/skills/mongodb_logo.png";
+import nextjs from "../assets/skills/nextjs_logo.png";
+import nodejs from "../assets/skills/nodejs_logo.png";
 
 export default function Skills() {
   return (

@@ -5,7 +5,10 @@ export default function Contact() {
     <div id="contact" className="section contact">
       <div className="card-container">
         <div className="card-contact">
-          <div className="card-front">Macarena Lopez</div>
+          <div className="card-front">
+            <p style={{ fontWeight: "bolder" }}>Macarena Lopez</p>
+            <p>Junior Front-End Developer</p>
+          </div>
           <div className="card-back">contact_msmaca@gmail.com</div>
         </div>
       </div>

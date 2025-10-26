@@ -4,7 +4,6 @@
   font-size: 1.3rem;
   font-family: "Courier New", Courier, monospace;
   --background-black: rgba(0, 0, 0, 0.863);
-  --blue-card: rgb(66, 112, 182);
 }
 html {
   scroll-behavior: smooth;
@@ -22,7 +21,7 @@ a {
 }
 .section {
   height: 100vh;
-  border: solid black;
+  /* border: solid black; */
   scroll-margin-top: 80px;
 }
 
@@ -113,6 +112,7 @@ i {
   background: url(./assets/background-contact.jpg) no-repeat center/cover;
 }
 .card-container {
+  cursor: pointer;
   perspective: 1000px;
   width: 500px;
   height: 250px;
@@ -146,8 +146,70 @@ i {
 }
 .card-back {
   transform: rotateY(180deg);
-  /* background: radial-gradient(rgb(201, 201, 85), var(--blue-card)); */
 }
-.card-front {
-  /* background: radial-gradient(rgb(201, 201, 85), var(--blue-card)); */
+
+/* PROJECTS  */
+.projects {
+  background: url(../src/assets/background-contact.jpg) center/cover no-repeat;
+  position: relative;
+}
+.blur {
+  backdrop-filter: blur(1px);
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+.project-card-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+  padding: 5rem;
+}
+/* project card  */
+.project-card {
+  background-color: rgba(192, 192, 145, 0.562);
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.747);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.project-card > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card-proj-text {
+  position: absolute;
+  bottom: -100%;
+  left: 0%;
+  transition: bottom 0.4s ease-in-out;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(128, 128, 128, 0.568);
+  padding: 20px 10px;
+}
+.project-card:hover .card-proj-text {
+  bottom: 0%;
+}
+/* FOOTER  */
+.footer {
+  background: var(--background-black);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
 }
