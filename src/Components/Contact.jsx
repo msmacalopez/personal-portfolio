@@ -9,7 +9,23 @@ export default function Contact() {
             <p style={{ fontWeight: "bolder" }}>Macarena Lopez</p>
             <p>Junior Front-End Developer</p>
           </div>
-          <div className="card-back">contact_msmaca@gmail.com</div>
+          <div className="card-back">
+            <p>contact_msmaca@gmail.com</p>
+            <p>
+              <a href="https://github.com/msmacalopez" target="_blank">
+                GitHub
+              </a>
+            </p>
+
+            <p>
+              <a
+                href="https://www.linkedin.com/in/msmacarenalopez/"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
