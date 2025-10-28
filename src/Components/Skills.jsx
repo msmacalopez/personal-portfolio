@@ -10,19 +10,36 @@ export default function Skills() {
       className="section skills d-flex justify-content-center align-items-center flex-wrap align-content-center gap-2"
     >
       {/* HTML */}
-      <i className="fa-brands fa-html5" style={{ color: "#E34C26" }}></i>
+      <div className="talent">
+        <i className="fa-brands fa-html5" style={{ color: "#E34C26" }}></i>
+      </div>
       {/* CSS */}
-      <i className="fa-brands fa-css3-alt" style={{ color: "#1572B6" }}></i>
+      <div className="talent">
+        <i className="fa-brands fa-css3-alt" style={{ color: "#1572B6" }}></i>
+      </div>
+
       {/* JS */}
-      <i className="fa-brands fa-js" style={{ color: "#F0DB4F" }}></i>
+      <div className="talent">
+        <i className="fa-brands fa-js" style={{ color: "#F0DB4F" }}></i>
+      </div>
+
       {/* React */}
-      <i className="fa-brands fa-react" style={{ color: "#61DBFB" }}></i>
+      <div className="talent">
+        <i className="fa-brands fa-react" style={{ color: "#61DBFB" }}></i>
+      </div>
       {/* Node */}
-      <img className="logo d-block" src={nodejs} alt="MongoDB Logo" />
+      <div className="talent">
+        <img className="logo d-block" src={nodejs} alt="MongoDB Logo" />
+      </div>
       {/* NextJs */}
-      <img className="logo d-block" src={nextjs} alt="MongoDB Logo" />
+      <div className="talent">
+        <img className="logo d-block" src={nextjs} alt="MongoDB Logo" />
+      </div>
+
       {/* Mongo DB */}
-      <img className="logo d-block" src={mongodb} alt="MongoDB Logo" />
+      <div className="talent">
+        <img className="logo d-block" src={mongodb} alt="MongoDB Logo" />
+      </div>
     </div>
   );
 }
