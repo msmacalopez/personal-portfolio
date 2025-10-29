@@ -144,7 +144,7 @@ i {
   height: 250px;
 
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.616);
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.616); */
 }
 .card-contact {
   width: 100%;
