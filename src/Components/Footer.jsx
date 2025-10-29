@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <div id="footer" className="footer">
-      &copy; Developed by Macarena Lopez. All Rights Reserved.
+      Developed by Macarena Lopez. &copy; All Rights Reserved.
       <br />
       Sydney
     </div>
