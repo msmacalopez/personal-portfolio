@@ -190,6 +190,43 @@ i {
 .projects {
   background: url(../src/assets/background-contact.jpg) center/cover no-repeat;
   position: relative;
+  text-align: center;
+  /* overflow: hidden; */
+  border: red solid;
+  width: 100%;
+  height: 100vh;
+}
+.projects .slider {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 20%;
+  left: calc(50% - 100px);
+  /* make childs able to move 3D: */
+  transform-style: preserve-3d;
+  /* Gives Z-index of 1000px */
+  transform: perspective(500px);
+  animation: rotateSlider 20s linear infinite;
+}
+@keyframes rotateSlider {
+  from {
+    transform: perspective(500px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(500px) rotateY(360deg);
+  }
+}
+.projects .slider .item {
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: translateZ(350px)
+    rotateY(calc((360deg / (var(--quantity))) * ((var(--position)))));
+}
+
+.projects .slider .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .blur {
   backdrop-filter: blur(1px);
