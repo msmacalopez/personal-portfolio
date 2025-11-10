@@ -1,11 +1,14 @@
 import React from "react";
 
-export const ProjectCard = () => {
+export const ProjectCard = ({ image, title, text }) => {
   return (
     <>
       <div className="project-card">
-        <img src="../src/assets/icon.png" alt="" />
-        <div className="card-proj-text">This is my app does this ...</div>text
+        <div className="card-content">
+          <img src={image} alt="" />
+          <h1>{title}</h1>
+        </div>
+        <div className="card-proj-text">{text}</div>
       </div>
     </>
   );
