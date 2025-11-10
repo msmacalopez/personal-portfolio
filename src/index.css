@@ -31,19 +31,53 @@ a {
 .skills {
   background: linear-gradient(var(--bg-skills-top), var(--bg-skills-bottom));
   box-shadow: inset 0 -40px 40px -20px rgba(0, 0, 0, 0.7);
-}
-.skills > * {
-  display: flex;
-  align-items: center;
-  justify-items: center;
+  position: relative;
   text-align: center;
+  width: 100%;
+  height: 100vh;
 }
-.talent {
+
+.skills .carousel {
+  position: absolute;
+  width: 1px;
+  height: 30px;
+  /* border: yellow solid; */
+  top: calc(50% - 100px);
+  left: calc(50% - 1px);
+  /* make childs able to move 3D: */
+  transform-style: preserve-3d;
+  /* Gives Z-index of 1000px */
+  transform: perspective(600px);
+  animation: rotateSlider 20s linear infinite;
+}
+@keyframes rotateSlider {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.skills .carousel:hover {
+  animation-play-state: paused;
+}
+.skills .carousel .talent {
   background: rgba(255, 255, 255, 0.392);
   width: 150px;
   height: 150px;
   border-radius: 10px;
   padding: 10px;
+
+  /* degrees calculation */
+  position: absolute;
+  inset: 0 0 0 0;
+  transform: rotateY(var(--position)) translateZ(250px);
+
+  /* center img&i inside the talent div */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .talent img {
   display: block; /* removes the small gap below inline images */
@@ -214,7 +248,7 @@ i {
     transform: perspective(600px) rotateY(0deg);
   }
   to {
-    transform: perspective(800px) rotateY(360deg);
+    transform: perspective(600px) rotateY(360deg);
   }
 }
 .projects .slider:hover {
