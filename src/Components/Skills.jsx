@@ -1,6 +1,6 @@
 import React from "react";
 import mongodb from "../assets/skills/mongodb_logo.png";
-import nextjs from "../assets/skills/nextjs_logo.png";
+import expressjs from "../assets/skills/expressjs.png";
 import nodejs from "../assets/skills/nodejs_logo.png";
 
 const totalSkills = 7;
@@ -35,9 +35,9 @@ export default function Skills() {
         <div className="talent" style={{ "--position": `${degrees[4]}deg` }}>
           <img className="logo d-block" src={nodejs} alt="NodeJS Logo" />
         </div>
-        {/* NextJs */}
+        {/* ExpressJs */}
         <div className="talent" style={{ "--position": `${degrees[5]}deg` }}>
-          <img className="logo d-block" src={nextjs} alt="NextJS Logo" />
+          <img className="logo d-block" src={expressjs} alt="ExpressJS Logo" />
         </div>
 
         {/* Mongo DB */}
