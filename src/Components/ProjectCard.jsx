@@ -1,12 +1,15 @@
 import React from "react";
 
-export const ProjectCard = ({ image, title, text }) => {
+export const ProjectCard = ({ video, title, text, tech }) => {
   return (
     <>
       <div className="project-card">
         <div className="card-content">
-          <img src={image} alt="" />
-          <h1>{title}</h1>
+          <video src={video} autoPlay loop muted playsInline />
+          <h1>
+            <b>{title}</b>
+          </h1>
+          <p>Tech-Stack: {tech}</p>
         </div>
         <div className="card-proj-text">{text}</div>
       </div>

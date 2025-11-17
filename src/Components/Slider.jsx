@@ -41,7 +41,12 @@ export default function Slider() {
     <div className="slider">
       {projectsData.map((proj, index) => (
         <div className="item" key={index} style={getTransform(index)}>
-          <ProjectCard image={proj.image} title={proj.title} text={proj.text} />
+          <ProjectCard
+            video={proj.video}
+            title={proj.title}
+            text={proj.text}
+            tech={proj.tech}
+          />
         </div>
       ))}
 
