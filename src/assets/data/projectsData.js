@@ -1,18 +1,11 @@
 // Import images
 import movieworldVideo from "../projects/movieWorld-portfolio.mp4";
 import myCookNotes from "../projects/myCookNotes-portfolio.mp4";
-// import glassmorphismVideo from "../projects/glassmorphism-portfolio.jpg";
 import gymWebsiteVideo from "../projects/gymWebsite.mp4";
 import travelBlogVideo from "../projects/miniProject-travelBlog.mp4";
 
 // Export an array of slide objects
 export const projectsData = [
-  // {
-  //   title: "Glassmorphism UI Design",
-  //   text: "A visually appealing UI design project that demonstrates the use of glassmorphism effects to create modern and elegant user interfaces. This project showcases advanced CSS techniques and creative design implementation.",
-  //   tech: "HTML, CSS",
-  //   video: glassmorphismVideo,
-  // },
   {
     title: "Travel Blog",
     text: "A simple and elegant travel blog created using only HTML and CSS. This project features a clean layout to showcase travel stories and photos, emphasizing readability and visual appeal. It demonstrates the use of basic web design principles to create a functional and aesthetically pleasing website.",

@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/projects.css";
 import Slider from "./Slider.jsx";
 
 export default function Projects() {

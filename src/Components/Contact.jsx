@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import "../styles/contact.css";
 import swooshSound from "../assets/swoosh.mp3";
 
 export default function Contact() {

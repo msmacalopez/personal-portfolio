@@ -12,14 +12,14 @@ function App() {
 
   return (
     <>
-      <video
+      {/* <video
         className="bg-video"
         src={bgvideo}
         autoPlay
         loop
         muted
         playsInline
-      />
+      /> */}
       <div className="wrapper">
         <NavBar />
         <Hero />

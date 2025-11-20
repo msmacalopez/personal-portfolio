@@ -1,0 +1,53 @@
+/* Contact  Section */
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: url(./assets/background-contact.jpg) no-repeat center/cover; */
+}
+.card-container {
+  cursor: pointer;
+  perspective: 1000px;
+  width: 500px;
+  height: 250px;
+
+  border-radius: 20px;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.616); */
+}
+.card-contact {
+  width: 100%;
+  height: 100%;
+  /* padding: 2rem; */
+
+  position: relative;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+
+  /* glow border  */
+  border-radius: 20px;
+  box-shadow: 0 0 20px white; /* Creates a glowing effect */
+  border: 4px solid transparent; /* Optional: for smoother glow */
+
+  /* glowing text  */
+  color: white; /* Text color */
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white; /* Creates a glowing effect */
+}
+.card-container:hover .card-contact {
+  transform: rotateY(180deg);
+}
+.card-front,
+.card-back {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  overflow: hidden;
+  border-radius: 20px;
+
+  backdrop-filter: blur(10px);
+  background: rgba(71, 68, 68, 0.088); /* <--- add transparency */
+}
+.card-back {
+  transform: rotateY(180deg);
+}

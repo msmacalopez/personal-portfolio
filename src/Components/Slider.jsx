@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/slider.css";
 import { ProjectCard } from "./ProjectCard.jsx";
 import { projectsData } from "../assets/data/projectsData.js";
 
@@ -38,24 +39,26 @@ export default function Slider() {
   };
 
   return (
-    <div className="slider">
-      {projectsData.map((proj, index) => (
-        <div className="item" key={index} style={getTransform(index)}>
-          <ProjectCard
-            video={proj.video}
-            title={proj.title}
-            text={proj.text}
-            tech={proj.tech}
-          />
-        </div>
-      ))}
+    <div className="project-slider">
+      <div className="slider">
+        {projectsData.map((proj, index) => (
+          <div className="item" key={index} style={getTransform(index)}>
+            <ProjectCard
+              video={proj.video}
+              title={proj.title}
+              text={proj.text}
+              tech={proj.tech}
+            />
+          </div>
+        ))}
 
-      <button id="prev" onClick={prevSlide}>
-        &lt;
-      </button>
-      <button id="next" onClick={nextSlide}>
-        &gt;
-      </button>
+        <button id="prev" onClick={prevSlide}>
+          &lt;
+        </button>
+        <button id="next" onClick={nextSlide}>
+          &gt;
+        </button>
+      </div>
     </div>
   );
 }

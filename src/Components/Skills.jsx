@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/skills.css";
 import mongodb from "../assets/skills/mongodb_logo.png";
 import expressjs from "../assets/skills/expressjs.png";
 import nodejs from "../assets/skills/nodejs_logo.png";

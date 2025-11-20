@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/projectCard.css";
 
 export const ProjectCard = ({ video, title, text, tech }) => {
   return (
