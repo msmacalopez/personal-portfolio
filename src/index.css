@@ -48,4 +48,7 @@ a {
   text-align: center;
   padding: 20px 0;
   font-size: 0.9rem;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
 }
