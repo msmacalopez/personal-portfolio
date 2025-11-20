@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/projects.css";
-import Slider from "./Slider.jsx";
+import Slider from "./ProjectSlider.jsx";
 
 export default function Projects() {
   return (

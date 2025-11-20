@@ -20,11 +20,13 @@ export default function Contact() {
           onMouseLeave={handleHover}
         >
           <div className="card-front">
-            <p style={{ fontWeight: "bolder" }}>Macarena Lopez</p>
-            <p>Junior Front-End Developer</p>
+            <p style={{ fontWeight: "bolder", fontSize: "2.2rem" }}>
+              Macarena Lopez
+            </p>
+            <p>Full Stack Developer</p>
           </div>
           <div className="card-back">
-            <p>contact_msmaca@gmail.com</p>
+            <p>Click to Email</p>
             <p>
               <a href="https://github.com/msmacalopez" target="_blank">
                 GitHub
