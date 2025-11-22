@@ -1,7 +1,15 @@
 /* SKILLS  */
+i {
+  font-size: 5rem;
+}
+
+.logo {
+  width: 150px;
+}
+
 .skills {
   /* background: linear-gradient(var(--bg-skills-top), var(--bg-skills-bottom)); */
-  box-shadow: inset 0 -40px 40px -20px rgba(0, 0, 0, 0.7);
+  /* box-shadow: inset 0 -40px 40px -20px rgba(0, 0, 0, 0.7); */
   position: relative;
   text-align: center;
   width: 100%;

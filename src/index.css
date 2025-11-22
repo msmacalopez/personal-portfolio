@@ -32,8 +32,6 @@ a {
   /* width: 90%;
   margin: auto; */
   min-height: 100vh;
-  /* background: grey; */
-  background: lightblue;
 }
 .section {
   height: 100vh;
@@ -48,7 +46,8 @@ a {
   text-align: center;
   padding: 20px 0;
   font-size: 0.9rem;
-  position: absolute;
+  position: relative;
   z-index: 1;
   width: 100%;
+  box-shadow: 0 -80px 150px rgba(255, 255, 255, 0.315);
 }

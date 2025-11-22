@@ -4,7 +4,8 @@ import { ProjectCard } from "./ProjectCard.jsx";
 import { projectsData } from "../assets/data/projectsData.js";
 
 export default function Slider() {
-  const [active, setActive] = useState(Math.floor(projectsData.length / 2));
+  // const [active, setActive] = useState(Math.floor(projectsData.length / 2));
+  const [active, setActive] = useState(0);
 
   const nextSlide = () => {
     if (active < projectsData.length - 1) setActive(active + 1);
