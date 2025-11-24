@@ -7,40 +7,46 @@ i {
   width: 150px;
 }
 
+/* banner */
 .skills {
   /* background: linear-gradient(var(--bg-skills-top), var(--bg-skills-bottom)); */
   /* box-shadow: inset 0 -40px 40px -20px rgba(0, 0, 0, 0.7); */
   position: relative;
-  text-align: center;
   width: 100%;
   height: 100vh;
+  text-align: center;
+  overflow: hidden; /* hide scrollbars in the x-axis when screen is smaller*/
 }
 
+/* slider */
 .skills .carousel {
   position: absolute;
-  width: 1px;
-  height: 30px;
+  width: 200px;
+  height: 250px;
   /* border: yellow solid; */
   top: calc(50% - 100px);
-  left: calc(50% - 1px);
+  /* left: 50% - half width */
+  left: calc(50% - 100px);
   /* make childs able to move 3D: */
   transform-style: preserve-3d;
   /* Gives Z-index of 1000px */
-  transform: perspective(600px);
+  transform: perspective(1000px);
   animation: rotateSlider 20s linear infinite;
 }
 @keyframes rotateSlider {
   from {
-    transform: perspective(600px) rotateY(0deg);
+    transform: perspective(550px) rotateY(0deg);
   }
   to {
-    transform: perspective(600px) rotateY(360deg);
+    transform: perspective(550px) rotateY(360deg);
   }
 }
 
 .skills .carousel:hover {
   animation-play-state: paused;
 }
+
+/* item */
 .skills .carousel .talent {
   background: rgba(255, 255, 255, 0.392);
   width: 150px;
@@ -51,7 +57,7 @@ i {
   /* degrees calculation */
   position: absolute;
   inset: 0 0 0 0;
-  transform: rotateY(var(--position)) translateZ(250px);
+  transform: rotateY(var(--position)) translateZ(350px);
 
   /* center img&i inside the talent div */
   display: flex;
