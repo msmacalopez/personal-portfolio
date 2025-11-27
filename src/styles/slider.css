@@ -80,3 +80,17 @@
 #next {
   right: 80px;
 }
+/* (min-width: 768px) and (max-width: 991px) */
+@media (max-width: 991px) {
+  #next,
+  #prev {
+    top: calc(50% + 80px);
+  }
+  #prev {
+    left: 50px;
+  }
+
+  #next {
+    right: 50px;
+  }
+}

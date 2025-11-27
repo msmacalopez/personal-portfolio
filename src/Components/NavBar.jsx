@@ -45,13 +45,10 @@ export default function NavBar() {
         </Navbar.Brand>
 
         {/* Hamburger */}
-        <Navbar.Toggle
-          aria-controls="main-navbar"
-          className="ms-2 flex-shrink-0"
-        />
+        <Navbar.Toggle aria-controls="main-navbar" className="flex-shrink-0" />
 
         <Navbar.Collapse id="main-navbar">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto text-white">
             <Nav.Link href="#hero">Home</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
