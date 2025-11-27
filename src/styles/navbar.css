@@ -17,6 +17,12 @@
   );
   color: white;
 }
+@media (max-width: 576px) {
+  /* affects medium and below */
+  .navbar {
+    padding: 0.5rem 1rem !important;
+  }
+}
 .navbar > div {
   display: flex;
   justify-content: center;
