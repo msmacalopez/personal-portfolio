@@ -13,7 +13,7 @@ export const projectsData = [
     video: travelBlogVideo,
   },
   {
-    title: "Gym Website UI Design",
+    title: "Gym Website",
     text: "A modern gym website showcasing a sleek design with a focus on fitness and health. This project features a video background and parallax scrolling effects to create an engaging and dynamic user experience. It highlights advanced CSS animations and responsive design techniques.",
     tech: "HTML, CSS",
     video: gymWebsiteVideo,
